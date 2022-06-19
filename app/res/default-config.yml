@@ -1,0 +1,43 @@
+# Files to ignore
+ignore:
+
+  # All the file (by name) to ignore
+  files:
+    - file-linter.yml
+
+  # Add all the file (by extensions) to ignore
+  extensions:
+
+  # All the directory to ignore
+  directories:
+    - .git
+    - .idea
+    - .vscode
+
+
+# The file and directories name formats
+formats:
+
+  # All the files and directories
+  all:
+
+    # The file format, 'a' is being the first letter of each word. So for example :
+    # - a_a is snake_case
+    # - aA is camelCase
+    # - AA is PascalCase
+    # ...
+    format: a_a
+
+    # The file format in regex. If format is defined, 'regex' will be ignored.
+#    regex: ([a-z]*_?[a-z]*)*
+
+  # Specific file extensions
+  extensions:
+    md:
+      format: A_A
+#      regex:
+
+  # In a specific directory
+  directories:
+    -
+    - res
