@@ -1,1 +1,4 @@
 colorama
+loguru
+pyyaml
+argparse
